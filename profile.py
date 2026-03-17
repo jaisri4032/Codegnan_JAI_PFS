@@ -1,0 +1,8 @@
+print("PROFILE DETAILS")
+print("****************")
+print("Name:K jai sri")
+print("Qualification:Btech(pursuing")
+print("Passed out:2026")
+print("Age:20")
+print("Course:Python full stack ")
+print("************************")
