@@ -152,6 +152,7 @@ print(type(a))
 #Now let's work on a simple case study using above -->Fee calculator
 
 #details of student
+'''
 name = input("Enter the student name:")
 print("------------")
 admission_fee = int(input("Enter the Admission Fee:"))
@@ -166,6 +167,25 @@ print("Tuition fee :",tuition_fee)
 print("Hostel fee :",hostel_fee)
 print("Total fees :",total_fees)
 print("<------------->)
+'''
+#another case simple case study --> For calculating Savings
+name = (input("Enter account name:"))
+print("<<_________________________________>>>")
+total_income = float(input("Enter the Total_income:"))
+rent = int(input("Enter the rent:"))
+food_expenses = float(input("Enter the Food_expenses:"))
+# calculte the total savings
+total_expenses = rent + food_expenses
+total_savings = total_income - total_expenses
+print("<<_________________________________>>>")                 
+print("Name:",name)
+print("Total_income:",total_income)
+print("Rent :",rent)
+print("Food_expenses:",food_expenses)
+print("Total_expenses:",total_expenses)
+print("Total_savings:",total_savings)
+                 
+                 
 
 
 
