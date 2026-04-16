@@ -1,38 +1,66 @@
-#Modules-->A module  in a python os simply file that contains python code(functions,varaibles,classes)
-#To use modules,we have to use keyword called import before the module.
 '''
-TYPES-->1.Bulit-in or inbuilt  2. User_define modules
+-->00P'S object oriented programming is a style of programming where we model real-world
+   thing as object that contains both data and functions()
+>>>WHY:
+   *reusable of code
+   *Scalable
 
---->**User defined module--->this ia developed by user or programmer inside a file  of python code and
-      used by called import with filename.
-SYNTAX:
-      import(keyword) file_name
-      file_name.functionality
+>>CLASS:
+-->class is blueprint or template that defines what kind of data
+   and behaviour of certain type of object will have
+>>>SYNTAX:
+   **class class_Name:
+      pass
+>>>EXAMPLE:
+   **class bike:
+         pass
+--------------------------------------------------------------------------
+>>>OBJECT:
+-->Instance of class or an object is a real instance created from class.
+   it is actutal thing that exists in memory while program runs
 
-EXAMPLE:
+class car:
+    pass
+car1 = car()#objects
+car2 = car()#objects
+-----------------------------------------------------------------------------
+>>>ATTRIBUTES:
+--> these are the variables that store data realated to class or objects
 
-import module
-print(module.add(10,20))
-
-import day5
-print(day5.han(any))                                      
-
-**Built_in or inbuilt--->Already these are comes with installation and they are ready to use in the program.
---->this is developed by developers..
-
-import math
-print(math.sqrt(36))
+class dog:
+    def __init__(self,breed,color):
+       self.breed = breed
+       self.color = color         
+dog_1 = dog("bull dog","white/cream")
+dog_2 = dog("labrador", "black")
+print(dog_2.breed)
 '''
-import random
-attempts = 3
-while attempts > 0:
-    user = int(input())
-    tar = random.randint(1,90)
-    print(tar)
-    if  user == tar:
-        print("you win")
-    else:
-        attempts -= 1
-if attempts == 0:
-   print("you lose")
-   
+class car:
+    wheels = 4
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.mileage = 20
+    def drive(self, miles):
+        self.mileage += miles
+        return f"Drove {miles} Miles. Total: {self.mileage}"
+    def info(self):
+        return f"{self.make} {self.model} {self.year}"
+car1 = car(make="ford", model="mustang", year="2008")
+car2 = car(make="toyota", model="camry", year="2023")
+print(car1.info())
+print(car2.info())
+print(car2.drive(10))
+
+
+
+
+
+
+
+
+
+
+
+
